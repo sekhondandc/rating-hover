@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #292929;
+}
+.rating-wrapper{
+    direction: rtl;
+}
+.rating-wrapper a{
+    margin: 5px;
+    font-size: 4em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.rating-wrapper a:hover{
+    color: #ffd700;
+    transform: scale(1.2);
+}
+.rating-wrapper #rating1:hover ~ a,
+.rating-wrapper #rating2:hover ~ a,
+.rating-wrapper #rating3:hover ~ a,
+.rating-wrapper #rating4:hover ~ a,
+.rating-wrapper #rating5:hover ~ a{
+    color: #ffd700;
+}
